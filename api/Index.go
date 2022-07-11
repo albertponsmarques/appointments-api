@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"github.com/gorilla/mux"
 	_ "github.com/lib/pq"
-	"log"
 	"net/http"
 	"time"
 )
@@ -32,8 +31,8 @@ func main() {
 	router.HandleFunc("/appointments/", DeleteAppointments).Methods("DELETE")
 
 	// serve the app
-	fmt.Println("Server at 8080")
-	log.Fatal(http.ListenAndServe(":8000", router))
+	//fmt.Println("Server at 8080")
+	//log.Fatal(http.ListenAndServe(":8000", router))
 }
 
 func GetAppointments(w http.ResponseWriter, r *http.Request) {
