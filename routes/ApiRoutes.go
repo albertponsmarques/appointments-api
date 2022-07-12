@@ -6,6 +6,7 @@ import (
 )
 
 func MyRoutes(r *gin.Engine) {
+	r.GET("/", controller.HomePage)
 	r.GET("/appointments", controller.GetAppointments)
 	r.POST("/appointments", controller.CreateAppointment)
 	r.DELETE("appointments/:id", controller.DeleteAppointment)

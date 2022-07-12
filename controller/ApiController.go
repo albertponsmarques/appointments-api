@@ -6,6 +6,10 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+func HomePage(c *gin.Context) {
+	c.String(200, "THIS IS THE HOMEPAGE OF MY API")
+}
+
 func GetAppointments(c *gin.Context) {
 	var appointments []classes.Appointment
 	config.DB.Find(&appointments)
