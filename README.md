@@ -1,5 +1,5 @@
 # appointments-api
-golang API to create appointments.by albert pons marques.
+golang API to create appointments **by albert pons marques**.
 
 ##summary
 This api is made to store and create appointments, and it's deployed in heroku.
