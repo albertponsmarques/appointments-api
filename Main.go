@@ -4,7 +4,6 @@ import (
 	"AppointmentsAPI/config"
 	"AppointmentsAPI/routes"
 	"github.com/gin-gonic/gin"
-	"os"
 )
 
 func main() {
@@ -14,7 +13,8 @@ func main() {
 
 	routes.MyRoutes(router)
 
-	err := router.Run(":" + os.Getenv("PORT"))
+	//err := router.Run(":" + os.Getenv("PORT"))
+	err := router.Run(":8080")
 	if err != nil {
 		return
 	}
