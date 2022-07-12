@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER:awotxvic
+      - POSTGRES_PASSWORD=uxJrwNzW7MYyb9BaJUThmdVAIP0fJ4jr
+      - POSTGRES_DB=awotxvic
+
+aquet xou es per fer una db
